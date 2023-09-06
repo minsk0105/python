@@ -46,4 +46,5 @@ def mul(*values):
     for value in values:
         out = out * value
     return out
+
 print(mul(5, 7, 9, 10))
