@@ -21,14 +21,20 @@ def factorial(n):
         return n * factorial(n - 1)
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 55ad0e8 (.)
 # print("1!:", factorial(1))
 # print("2!:", factorial(2))
 # print("3!:", factorial(3))
 # print("4!:", factorial(4))
+<<<<<<< HEAD
 =======
 print("1!:", factorial(1))
 print("2!:", factorial(2))
 print("3!:", factorial(3))
 print("4!:", factorial(4))
 >>>>>>> 1c4ac3b (.)
+=======
+>>>>>>> 55ad0e8 (.)
 print("5!:", factorial(5))
