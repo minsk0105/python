@@ -70,7 +70,7 @@ def echo_all(updates):
             elif(text == "/start"):
                 print("new user:", chat)
                 send_message(
-                    "반갑습니다. 행맨 봇입니다. 게임을 시작하기 원하시면 /hangman 명령을 입력하세요. 게임을 시작합니다.")
+                    "반갑습니다. 행맨 봇입니다. 게임을 시작하기 원하시면 /hangman 명령을 입력하세요. 게임을 시작합니다.", chat)
             elif(len(gamelist[chat]) > 1 and not gamelist[chat][1]):
                 print(chat, "entered", text)
                 succeed = True
