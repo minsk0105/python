@@ -1,19 +1,19 @@
-import json
-import requests
+import json # 필요한 데이터 조각을 추출할 수 있도록 모듈을 사용하여 구문 분석
+import requests # 모듈 가져오기
 import time
 import urllib
 
-TOKEN = "6398049872:AAGwlITpxsj9uuS7y4AJbzGuA-xJo7P7ICA"
+TOKEN = "6398049872:AAGwlITpxsj9uuS7y4AJbzGuA-xJo7P7ICA" # 에코봇을 실행할 텔레그램 토큰을 가져오기
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
-def get_url(url):
+def get_url(url): # get_url 함수 : URL에서 콘텐츠를 다운로드하고 문자열 제공
     response = requests.get(url)
-    content = response.content.decode("utf8")
+    content = response.content.decode("utf8") # 추가 호환성을 위한 부분 추가
     return content
 
 
-def get_json_from_url(url):
+def get_json_from_url(url): 
     content = get_url(url)
     js = json.loads(content)
     return js
